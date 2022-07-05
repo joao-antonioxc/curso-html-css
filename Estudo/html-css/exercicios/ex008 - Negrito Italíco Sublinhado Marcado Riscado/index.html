@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos, "Negrito, Itálico e Sublinhado"</title>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <hr>
+    <h2>Negrito ou Destaque</h2>
+        <div>
+            <p>
+                Nesta frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt;<b>Negrito/Destaque</b>&lt;/b&gt;.<br>Esta tag &lt;b&gt;<b>Negrito/Destaque</b>&lt;/b&gt; não tem significado semântico no código.
+            </p>
+            <p>
+                Já a tag &lt;strong&gt;<strong>Negrito/Destaque</strong>&lt;/strong&gt; visualmente falando é igual a tag &lt;b&gt;<b>Negrito/Destaque</b>&lt;/b&gt;.<br>
+                Porém a tag &lt;strong&gt;<strong>Negrito/Destaque</strong>&lt;/strong&gt; possui um significado semântico onde faz com o que estiver dentro seja algo forte de extrema importância, não apenas visualmente falando.<br>
+                Segundo <cite>Emersom Lourenço</cite>:
+            </p>
+            <blockquote cite="https://www.devmedia.com.br/forum/html-b-ou-strong-qual-utilizar/581810#:~:text=Resumindo%3A%20acredito%20que%20n%C3%A3o%20ha%20diferen%C3%A7a%2C%20ambas%20funcionam.&text=%3D%20Direcionado%20a%20textos,sem%20conota%C3%A7%C3%A3o%20ou%20explica%C3%A7%C3%A3o%20expl%C3%ADcita.&text=%3D%20Utilizado%20para%20dar,ou%20frase%20de%20alta%20import%C3%A2ncia.">
+                <p>
+                    Ouvi uma vez que é questão de semântica, mesmo que os dois funcionem de forma parecida.
+                    Na Web não são somente usuários humanos que estarão consumindo serviços de seus sites, mas também haverá milhares de robôs interpretando seus códigos.<br>
+                    Estes robôs possuem a visão somente de seus códigos, e neste sentido eles avaliam a semântica do que está escrito e não se a palavra está negrita ou não.
+                </p>
+                <p>
+                    Neste sentido, &lt;b&gt; faria somente a questão do negrito, utilizado em certos textos para uma questão estética.
+                    Já &lt;strong&gt; traz um significado maior ao texto que está utilizando, de modo que este funcione como marcador de "isto é importante", ou algo do tipo.
+                </p>
+                <p>
+                    Deve-se então ter cuidado ao utilizar &lt;strong&gt;, se for somente para negritar utilizar &lt;b&gt;, se for para enfatizar utilizar &lt;strong&gt. Espero ter ajudado.
+                </p>
+            </blockquote>
+        </div>
+    <h2>Itálico ou Ênfase</h2>
+        <div>
+            <p>
+                Nesta frase temos um <i>termo em itálico</i> usando a tag &lt;i&gt;<i>Itálico/Enfase</i>&lt;/i&gt;.<br>
+                Da mesma forma que a tag &lt;b&gt;<b>Negrito/Destaque</b>&lt;/b&gt; nao tem significado semântico, a tag &lt;i&gt;<i>Itálico/Enfase</i>&lt;/i&gt; também não possui significado semântico.
+            </p>
+            <p>
+                A tag que terá significado semântico para uma parte de texto em itálico é a tag &lt;em&gt;<em>Itálico/Ênfase</em>&lt;/em&gt;, quando se da ênfase a um texto.<br>
+                Para mais informações pode ler a biblioteca do site de desenvolvimento do <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/em">Mozilla</a>.
+            </p>
+        </div>
+    <h2>Sublinhado ou Inserido</h2>
+        <div>
+            <p>
+                Nesta frase temos um <u>termo em sublinhado</u> usando a tag &lt;u&gt;<u>Sublinhado/Inserido</u>&lt;/u&gt;.<br>
+                Da mesma forma que a tag &lt;b&gt;<b>Negrito/Destaque</b>&lt;/b&gt; e que a tag &lt;i&gt;<i>Itálico/Enfase</i>&lt;/i&gt;, a tag &lt;u&gt;<u>Sublinhado/Inserido</u>&lt;/u&gt; nao possui um significado semântico.
+            </p>
+            <p>
+                A tag que terá significado semântico para uma parte de texto em sublinhado, é a tag &lt;ins&gt;<ins>Itálico/Ênfase</ins>&lt;/ins&gt;, onde o significado é que o texto foi inserido, de alguma maneira.<br>
+                Para mais informações pode ler a biblioteca do site de desenvolvimento do <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ins">Mozilla</a>.
+            </p>
+        </div>
+    <h2>Marcado ou Relevantes</h2>
+        <div>
+            <p>
+                Nesta frase temos um <mark>termo marcado</mark> usando a tag &lt;mark&gt;<mark>Marcado/Relevante</mark>&lt;/mark&gt;.<br>
+                Esta tag &lt;mark&gt;<mark>Marcado/Relevante</mark>&lt;/mark&gt; não tem significado semântico no código.
+            </p>
+            <p>
+                Também é possível alterar a cor do texto &lt;mark&gt;<mark>Marcado/Relevante</mark>&lt;/mark&gt;, usando um atributo dentro da tag, ficando desta maneira "&lt;mark mark style="background-color: lime&gt;<mark style="background-color: lime">Marcado/Relevante</mark>&lt;/mark&gt;" desta maneira a marcação fica com a cor "lime" (verde florescente), pode ser usado o padrão de cor rgb com os códigos também. Vale lembrar que desta maneira a cor se altera apenas nesta tag em especifico.
+            </p>
+            <p>
+                Para mudar a cor de todas as tags &lt;mark&gt;<mark>Marcado/Relevante</mark>&lt;/mark&gt; do código pode ser incluído o código abaixo no bloco  &lt;head&gt;Cabeçalho&lt;/head&gt;.
+            </p>
+            <pre>
+                <code>
+                    &lt;head&gt;
+                        &lt;style&gt;
+                            mark {
+                                background-color: lime;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                </code>
+            </pre>
+            Para mais informações pode ler a biblioteca do site de desenvolvimento do <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/mark">Mozilla</a>.
+        </div>
+    <h2>Riscado ou Deletado</h2>
+        <div>
+            <p>
+                Nesta frase temos um <del>termo riscado</del> usando a tag &lt;del&gt;<del>Riscado/Deletado</del>&lt;/del&gt;.<br>
+                Esta tag &lt;del&gt;<del>Riscado/Deletado</del>&lt;/del&gt; possui um significado semântico no código, onde parte do texto riscado foi excluído de um documento.
+            </p>
+            <p>
+                Para mais informações pode ler a biblioteca do site de desenvolvimento do <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/del">Mozilla</a>.
+            </p>
+        </div>
+    <h2>Texto Pequeno</h2>
+        <div>
+            <p>
+                Nesta frase temos um <small>termo pequeno</small> usando a tag &lt;small&gt;<small>Texto Pequeno</small>&lt;/small&gt;.<br>
+                Esta tag &lt;small&gt;<small>Texto Pequeno</small>&lt;/small&gt; possui um significado semântico, sempre que algo direciona ou indica para "ler as letras pequenas de algum contrato" ou até mesmo ler o rodapé de um documento, ele esta se referindo a uma tag &lt;small&gt;<small>Texto Pequeno</small>&lt;/small&gt;.
+            </p>
+        </div>
+    <h2>Texto Sobrescrito e Sub-escrito</h2>
+        <div>
+            <p>
+                Nesta frase temos um <sup>termo sobrescrito</sup> usando a tag &lt;sup&gt;<sup>Texto Sobrescrito</sup>&lt;/sup&gt;.<br>
+                Um ótimo exemplo é x<sup>20</sup>+3=0
+            </p>
+            <p>
+                Nesta frase temos um <sub>termo sub-escrito</sub> usando a tag &lt;sub&gt;<sub>Texto Sub-escrito</sub>&lt;/sub&gt;.<br>
+                Um ótimo exemplo é H<sub>2</sub>O
+            </p>
+        </div>
+    <h2>Abreviações</h2>
+        <div>
+            <p>
+                Para abreviações usasse a tag &lt;abbr title="Texto Abreviado"&gt;<abbr title="Texto Abreviado">TA</abbr>&lt;/abbr&gt;.
+            </p>
+        </div>
+    
+</body>
+</html>
