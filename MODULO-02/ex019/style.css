@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    background-color: #e7ffd7;
+    color: #345c19;
+    font: normal 20px verdana, arial, serif;
+    padding: 30px;
+}
+
+h1 {
+    background-color: #fdd2ff;
+    color: #86298a;
+    padding: 20px;
+    text-indent: 50px;
+}
+
+h1#principal {
+    background-color: #fbacff;
+    color: #86298a;
+    text-align: center;
+}
+
+h2 {
+    background-color: #416d2341;
+    color: #2e7200;
+    padding: 20px;
+}
+
+p {
+    text-indent: 70px;
+    text-align: justify;
+}
