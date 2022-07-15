@@ -50,3 +50,12 @@ p {
     font-size: 1.5em;
     text-align: justify;
 }
+
+.topo {
+    background-color: var(--cor3);
+    width: 100%;
+}
+
+.menu {
+    background-color: var(--cor4);
+}
