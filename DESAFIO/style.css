@@ -13,17 +13,40 @@
 @font-face {
     font-family: 'Caviar Bold';
     src: url('fontes/CaviarDreams_Bold.ttf') format('truetype');
-    font-weight: bold;
+}
+
+:root{
+    --cor1: #e8eddfff;
+    --cor2: #cfdbd5ff;
+    --cor3: #49574eff;
+    --cor4: #1c2628ff;
+    --cor5: #f3a140ff;
+    --cor6: #f45b49ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
 }
 
 h1 {
     font-family: 'Caviar Bold', sans-serif;
+    font-size: 3.5em;
 }
 
 h2 {
     font-family: 'Caviar Normal', sans-serif;
+    font-size: 3em;
 }
 
 p {
     font-family: 'Altone Normal', sans-serif;
+    color: var(--cor4);
+    font-size: 1.5em;
+    text-align: justify;
 }
