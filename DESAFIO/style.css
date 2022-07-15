@@ -1,2 +1,29 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Altone Normal', sans-serif;
+    src: url('fontes/AltoneTrial-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Caviar Normal';
+    src: url('fontes/CaviarDreams.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Caviar Bold';
+    src: url('fontes/CaviarDreams_Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Caviar Bold', sans-serif;
+}
+
+h2 {
+    font-family: 'Caviar Normal', sans-serif;
+}
+
+p {
+    font-family: 'Altone Normal', sans-serif;
+}
